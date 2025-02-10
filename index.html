@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ali Abdelazim</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/Portfolio Style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/Portfolio/Portfolio Style.css" />
+
+<!-- Style -->
+
+
+<style>
+
+* {
+  font-family: "poppins";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* header */
+
+header {
+  background-color: #f0f0f0;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  padding: 10px 100px;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+}
+
+#logo {
+  color: #3a6cf4;
+  text-decoration: none;
+  font-size: 3em;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-shadow: grey 1px 2px 1px;
+  font-family: "Lilita One";
+}
+
+navigation a {
+  color: #3a6cf4;
+  font-size: 1.5em;
+  font-weight: 700;
+  padding-left: 30px;
+  text-decoration: none;
+  display: inline-block;
+  justify-content: space-between;
+  align-items: center;
+  text-shadow: grey 1px 1.5px 1px;
+  letter-spacing: 1px;
+}
+
+navigation a:hover {
+  color: #601cfc;
+  transform: scale(1.1);
+  transition: 0.6s ease;
+}
+
+#logo:hover {
+  color: #601cfc;
+  transition: 0.9s ease;
+}
+
+navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* header end */
+
+/* main */
+
+section {
+  padding: 100px 200px;
+}
+
+section {
+  padding: 100px 200px;
+}
+
+.main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: url(photos/dark-geometric-background-with-copy-space_24972-1816.avif)
+    no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.main h2 {
+  color: #fff;
+  font-size: 1.4em;
+  font-weight: 500;
+}
+
+.main h2 span {
+  display: inline-block;
+  margin-top: 10px;
+  color: #4e9eff;
+  font-size: 3em;
+  font-weight: 600;
+}
+
+.main h3 {
+  color: #fff;
+  font-size: 2em;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.main .btn {
+  color: #fff;
+  background-color: #3a6cf4;
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: 600;
+  display: inline-block;
+  padding: 0.9375em 2.1875em;
+  letter-spacing: 1px;
+  border-radius: 15px;
+  margin-bottom: 40px;
+  transition: 0.7s ease;
+}
+
+.main .btn:hover {
+  background-color: #0a49f6;
+  transform: scale(1.1);
+}
+
+.main .socialicons a {
+  color: #fff;
+  font-size: 1.7em;
+  padding-right: 30px;
+}
+
+.main .socialicons a:hover {
+  color: #3a6cf4;
+  transform: scale(1.1);
+  transition: 0.7s ease;
+}
+
+/*  */
+
+.title {
+  display: flex;
+  justify-content: center;
+  color: #3a6cf4;
+  font-size: 2.2em;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #fff;
+  width: 21.25em;
+  box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+  border-radius: 10px;
+  padding: 25px;
+  margin: 15px;
+  transition: 0.7s ease;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card .icon {
+  color: #3a6cf4;
+  font-size: 8em;
+  text-align: center;
+}
+
+.info {
+  text-align: center;
+}
+
+.info h3 {
+  color: #3a6cf4;
+  font-size: 1.2em;
+  font-weight: 700;
+  margin: 10px;
+}
+
+.projects {
+  background-color: #030338;
+}
+
+.projects .content {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat((5, 3fr));
+}
+
+.project {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.project .bigproject {
+  border: 15px;
+  padding: 5px;
+  width: 80em;
+  height: 50em;
+  margin: 10px;
+  margin-left: 180px;
+  border-radius: 30px;
+  background: lightgrey;
+  box-shadow: 7px 5px 25px 9px rgba(1 1 1 / 15%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.double {
+  border: 15px;
+  padding: 5px;
+  width: 45em;
+  height: 40em;
+  margin: 10px;
+  border-radius: 30px;
+  background: lightgrey;
+  box-shadow: 7px 5px 25px 9px rgba(1 1 1 / 15%);
+}
+
+/* From Uiverse.io by Gautammsharma */
+.comic-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #8f52ff;
+  border: 2px solid #000;
+  border-radius: 10px;
+  box-shadow: 5px 5px 0px #000;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  margin-top: 680px;
+  margin-right: 60px;
+}
+
+.comic-button:hover {
+  background-color: #fff;
+  color: #8f52ff;
+  border: 2px solid #8f52ff;
+  box-shadow: 5px 5px 0px #8f52ff;
+}
+
+.comic-button:active {
+  background-color: #c2ff52;
+  box-shadow: none;
+  transform: translateY(4px);
+}
+
+.contact .icon {
+  font-size: 4.5em;
+}
+
+.contact .info h3 {
+  color: #000;
+}
+
+.contact .info p {
+  font-size: 1.5em;
+}
+
+.footer {
+  background-color: #000016;
+  color: #fff;
+  padding: 2em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-title {
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+.footer-title span {
+  color: #3a6cf4;
+}
+
+.footer .social-icons a {
+  font-size: 1.3em;
+  padding: 0 12px 0 0;
+  color: #3a6cf4;
+}
+
+@media (max-width: 1023px) {
+  header {
+    padding: 12px 20px;
+  }
+
+  .navigation a {
+    padding-left: 10px;
+  }
+
+  .title {
+    font-size: 1.8em;
+  }
+
+  section {
+    padding: 80px 20px;
+  }
+
+  .main-content h2 {
+    font-size: 1em;
+  }
+
+  .main-content h3 {
+    font-size: 1.6em;
+  }
+
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 641px) {
+  body {
+    font-size: 12px;
+  }
+
+  .main-content h2 {
+    font-size: 0.8em;
+  }
+
+  .main-content h3 {
+    font-size: 1.4em;
+  }
+}
+
+@media (max-width: 300px) {
+  body {
+    font-size: 10px;
+  }
+}
+
+
+</style>
+
+
+<!-- Style -->
+
+
+  </head>
+
+  <body>
+    <!-- header -->
+
+    <header>
+      <a id="logo" href="#">Ali</a>
+      <navigation>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+      </navigation>
+    </header>
+
+    <!-- main Section -->
+
+    <section class="main">
+      <div>
+        <h2>
+          Hi, I'm Ali Abdelazim <br />
+          <span>Web Developer</span>
+        </h2>
+        <h3>Frontend Developer, building interactive web experiences.</h3>
+        <a href="#" class="btn">View My Work</a>
+
+        <div class="socialicons">
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/ali-abdelazim-a40941176/"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a target="_blank" href="https://github.com/aliabdelazim7"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a target="_blank" href="https://www.facebook.com/3li3wadii"
+            ><i class="fab fa-facebook"></i
+          ></a>
+          <a target="_blank" href="https://www.instagram.com/ali_abdelazim7/">
+            <i class="fab fa-instagram"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section  -->
+
+    <section class="cards" id="services">
+      <h2 class="title">Services</h2>
+      <div class="content">
+        <div class="card">
+          <div class="icon">
+            <i class="fa-solid fa-window-maximize"></i>
+          </div>
+          <div class="info">
+            <h3>Web Development</h3>
+            <p>
+              Design and develop interactive, responsive, and high-performance
+              web interfaces for seamless user experiences.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="icon">
+            <i class="fa-brands fa-wordpress"></i>
+          </div>
+          <div class="info">
+            <h3>WordPress</h3>
+            <p>
+              Build, customize, and optimize WordPress websites for better
+              performance, SEO, and user experience.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="icon">
+            <i class="fa-regular fa-lightbulb"></i>
+          </div>
+          <div class="info">
+            <h3>Idea to Website</h3>
+            <p>
+              Turn ideas into fully functional, responsive, and visually
+              stunning websites.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+
+    <section class="projects" id="projects">
+      <h2 class="title">Projects</h2>
+      <div class="content">
+        <div class="project-card">
+          <div class="project">
+            <iframe
+              class="bigproject"
+              src="https://game-store-10.web.app/"
+              width="100%"
+              height="100%"
+              frameborder="0"
+            ></iframe>
+            <div>
+              <a target="_blank" href="https://game-store-10.web.app/"
+                ><button class="comic-button">Explore</button></a
+              >
+            </div>
+          </div>
+
+          <div class="project">
+            <iframe
+              class="double"
+              src="https://register-page-10.web.app/"
+              width="35%"
+              height="30%"
+              frameborder="0"
+            ></iframe>
+            <iframe
+              class="double"
+              src="https://login-page-10.web.app/"
+              width="35%"
+              height="30%"
+              frameborder="0"
+            ></iframe>
+          </div>
+
+          <div class="project">
+            <iframe
+              class="bigproject"
+              src="https://admin-dashboard-e7427.web.app/"
+              width="100%"
+              height="100%"
+              frameborder="0"
+            ></iframe>
+            <div>
+              <a target="_blank" href="https://admin-dashboard-e7427.web.app/"
+              ><button class="comic-button">Explore</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+
+    <section class="cards contact" id="contact">
+      <h2 class="title">Let's work together</h2>
+      <div class="content">
+        <div class="card">
+          <div class="icon">
+            <i class="fas fa-phone"></i>
+          </div>
+          <div class="info">
+            <h3>Phone</h3>
+            <p>+20122222222</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="icon">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <div class="info">
+            <h3>Email</h3>
+            <p>business@islam.com</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p class="footer-title"><span>Ali Abdelazim</span></p>
+      <div class="social-icons">
+        <a
+          target="_blank"
+          href="https://www.linkedin.com/in/ali-abdelazim-a40941176/"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a target="_blank" href="https://github.com/aliabdelazim7"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a target="_blank" href="https://www.facebook.com/3li3wadii"
+          ><i class="fab fa-facebook"></i
+        ></a>
+        <a target="_blank" href="https://www.instagram.com/ali_abdelazim7/">
+          <i class="fab fa-instagram"></i
+        ></a>
+      </div>
+    </footer>
+  </body>
+</html>
