@@ -347,3 +347,139 @@ section {
     font-size: 10px;
   }
 }
+
+/* ميديا كويري للشاشات المتوسطة */
+@media (max-width: 768px) {
+  header {
+    padding: 12px 20px;
+  }
+
+  .navigation a {
+    padding-left: 10px;
+  }
+
+  .title {
+    font-size: 1.8em;
+  }
+
+  section {
+    padding: 80px 20px;
+  }
+
+  .main h2 {
+    font-size: 1em;
+  }
+
+  .main h3 {
+    font-size: 1.6em;
+  }
+
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .project .bigproject,
+  .project .double {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+  }
+
+  .comic-button {
+    margin-top: 20px;
+    margin-right: 0;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer .social-icons {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    transform: scale(0.6); 
+    transform-origin: top left;
+    width: 166.67%; 
+    height: 166.67%; 
+  }
+
+  header {
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #logo {
+    font-size: 2em;
+  }
+
+  .navigation {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navigation a {
+    padding: 5px 0;
+  }
+
+  .main h2 {
+    font-size: 0.8em;
+  }
+
+  .main h3 {
+    font-size: 1.4em;
+  }
+
+  .main .btn {
+    font-size: 0.9em;
+    padding: 0.5em 1em;
+  }
+
+  .main .socialicons a {
+    font-size: 1.2em;
+    padding-right: 15px;
+  }
+
+  .title {
+    font-size: 1.5em;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  .comic-button {
+    font-size: 1em;
+    padding: 5px 10px;
+  }
+
+  .contact .info h3 {
+    font-size: 1.2em;
+  }
+
+  .contact .info p {
+    font-size: 1.2em;
+  }
+
+  .footer-title {
+    font-size: 1em;
+  }
+
+  .footer .social-icons a {
+    font-size: 1em;
+    padding: 0 8px 0 0;
+  }
+}
+
+
